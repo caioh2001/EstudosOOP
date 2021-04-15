@@ -1,0 +1,8 @@
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\bin\Debug\netcoreapp3.1\Encapsulamento.deps.json
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\bin\Debug\netcoreapp3.1\Encapsulamento.dll
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\bin\Debug\netcoreapp3.1\Encapsulamento.pdb
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.AssemblyInfoInputs.cache
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.AssemblyInfo.cs
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.csproj.CoreCompileInputs.cache
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.dll
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.pdb
