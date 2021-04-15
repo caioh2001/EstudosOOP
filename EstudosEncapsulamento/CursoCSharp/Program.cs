@@ -1,4 +1,5 @@
 ﻿using System;
+using CursoCSharp.OO;
 
 namespace CursoCSharp
 {
@@ -6,7 +7,11 @@ namespace CursoCSharp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Encapsulamentos en = new Encapsulamentos();
+
+            en.Executar();
+
+            Console.ReadKey();
         }
     }
 }
