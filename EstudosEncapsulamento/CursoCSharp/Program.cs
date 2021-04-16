@@ -38,6 +38,9 @@ namespace CursoCSharp
             DelegatesComoParametros del = new DelegatesComoParametros();
             del.Executar();
 
+            MetodosDeExtencao met = new MetodosDeExtencao();
+            met.Executar();
+
             Console.ReadKey();
         }
     }
