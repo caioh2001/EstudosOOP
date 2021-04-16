@@ -26,6 +26,9 @@ namespace CursoCSharp
             ExemploLambda ex = new ExemploLambda();
             ex.Executar();
 
+            LambdasDelegate lamb = new LambdasDelegate();
+            lamb.Executar();
+
             Console.ReadKey();
         }
     }

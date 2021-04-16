@@ -10,7 +10,7 @@ namespace CursoCSharp.MetodosEFuncoes
         {
             Action algoNoConsole = () =>
             {
-                Console.WriteLine("Lambda com C#!" + a);
+                Console.WriteLine("Lambda com C#!");
             };
 
             algoNoConsole();
