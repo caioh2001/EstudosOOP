@@ -32,6 +32,9 @@ namespace CursoCSharp
             UsandoDelegates use = new UsandoDelegates();
             use.Executar();
 
+            DelegateFunAnonima func = new DelegateFunAnonima();
+            func.Executar();
+
             Console.ReadKey();
         }
     }
