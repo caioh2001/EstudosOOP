@@ -45,6 +45,9 @@ namespace CursoCSharp
             PrimeiraExcecao exc = new PrimeiraExcecao();
             exc.Executar();
 
+            ExcecoesPersonalizadas pers = new ExcecoesPersonalizadas();
+            pers.Executar();
+
             Console.ReadKey();
         }
     }
