@@ -35,6 +35,9 @@ namespace CursoCSharp
             DelegateFunAnonima func = new DelegateFunAnonima();
             func.Executar();
 
+            DelegatesComoParametros del = new DelegatesComoParametros();
+            del.Executar();
+
             Console.ReadKey();
         }
     }
