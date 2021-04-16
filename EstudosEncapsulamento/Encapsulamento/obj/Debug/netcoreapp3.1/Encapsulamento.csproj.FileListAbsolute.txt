@@ -6,3 +6,4 @@ D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsu
 D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.csproj.CoreCompileInputs.cache
 D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.dll
 D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.pdb
+D:\Projetos\EstudosEncapsulamento\Encapsulamento\obj\Debug\netcoreapp3.1\Encapsulamento.csprojAssemblyReference.cache

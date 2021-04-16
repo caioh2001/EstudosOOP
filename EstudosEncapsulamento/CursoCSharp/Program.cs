@@ -11,6 +11,10 @@ namespace CursoCSharp
 
             en.Executar();
 
+            Polimorfismo poli = new Polimorfismo();
+
+            poli.Executar();
+
             Console.ReadKey();
         }
     }
