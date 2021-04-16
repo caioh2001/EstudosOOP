@@ -1,5 +1,6 @@
 ﻿using System;
 using CursoCSharp.OO;
+using CursoCSharp.MetodosEFuncoes;
 
 namespace CursoCSharp
 {
@@ -21,6 +22,9 @@ namespace CursoCSharp
 
             Sealed sea = new Sealed();
             sea.Executar();
+
+            ExemploLambda ex = new ExemploLambda();
+            ex.Executar();
 
             Console.ReadKey();
         }
