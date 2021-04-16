@@ -58,7 +58,7 @@ namespace CursoCSharp.OO
     {
         public void Executar()
         {
-            Feijao ingrediente1 = new Feijao(3);
+            Feijao ingrediente1 = new Feijao(0.3);
             Arroz ingrediente2 = new Arroz(0.25);
             Carne ingrediente3 = new Carne(0.3);
 

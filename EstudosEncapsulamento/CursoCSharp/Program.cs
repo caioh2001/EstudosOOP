@@ -15,6 +15,10 @@ namespace CursoCSharp
 
             poli.Executar();
 
+            Abstract ab = new Abstract();
+
+            ab.Executar();
+
             Console.ReadKey();
         }
     }
