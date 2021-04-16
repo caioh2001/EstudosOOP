@@ -1,6 +1,7 @@
 ﻿using System;
 using CursoCSharp.OO;
 using CursoCSharp.MetodosEFuncoes;
+using CursoCSharp.Excecoes;
 
 namespace CursoCSharp
 {
@@ -40,6 +41,9 @@ namespace CursoCSharp
 
             MetodosDeExtencao met = new MetodosDeExtencao();
             met.Executar();
+
+            PrimeiraExcecao exc = new PrimeiraExcecao();
+            exc.Executar();
 
             Console.ReadKey();
         }
