@@ -19,6 +19,9 @@ namespace CursoCSharp
             Interface inter = new Interface();
             inter.Executar();
 
+            Sealed sea = new Sealed();
+            sea.Executar();
+
             Console.ReadKey();
         }
     }
