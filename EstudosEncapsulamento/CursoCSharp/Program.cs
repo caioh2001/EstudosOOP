@@ -29,6 +29,9 @@ namespace CursoCSharp
             LambdasDelegate lamb = new LambdasDelegate();
             lamb.Executar();
 
+            UsandoDelegates use = new UsandoDelegates();
+            use.Executar();
+
             Console.ReadKey();
         }
     }
