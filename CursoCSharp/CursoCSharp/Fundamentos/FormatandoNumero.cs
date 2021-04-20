@@ -28,7 +28,6 @@ namespace CursoCSharp.Fundamentos
             Console.WriteLine(valor.ToString("C2", cultura));
 
             int inteiro = 256;
-
             // Completa a variavel ate ela ter 10 casas decimais
             Console.WriteLine(inteiro.ToString("D10"));
         }
