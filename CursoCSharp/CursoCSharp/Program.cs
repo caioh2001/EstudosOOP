@@ -36,6 +36,7 @@ namespace CursoCSharp
                 {"Estrutura While - Estruturas de controle", EstruturaWhile.Executar},
                 {"Estrutura Do While - Estruturas de controle", EstruturaDoWhile.Executar},
                 {"Estrutura For - Estruturas de controle", EstruturaFor.Executar},
+                {"Estrutura ForEach - Estruturas de controle", EstruturaForEach.Executar},
             });
 
             central.SelecionarEExecutar();
