@@ -48,7 +48,6 @@ namespace CursoCSharp.ClassesEMetodos
 
             Console.WriteLine($"Preco com desconto: {produto1.CalcularDesconto()}");
             Console.WriteLine($"Preco com desconto: {produto2.CalcularDesconto()}");
-
         }
     }
 }
