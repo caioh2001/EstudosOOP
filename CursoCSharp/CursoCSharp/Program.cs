@@ -45,6 +45,7 @@ namespace CursoCSharp
                 {"Membros - Classes e metodos", Membros.Executar},
                 {"Construtores - Classes e metodos", Construtores.Executar},
                 {"Metodos com retorno - Classes e metodos", MetodosComRetorno.Executar},
+                {"Metodos Estaticos - Classes e metodos", MetodosEstaticos.Executar},
             });
 
             central.SelecionarEExecutar();
