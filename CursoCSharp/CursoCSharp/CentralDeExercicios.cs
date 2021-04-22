@@ -23,7 +23,7 @@ namespace CursoCSharp
                 i++;
             }
 
-            Console.Write("Digite o número (ou vazio para o último): ");
+            Console.Write("Digite o número (ou vazio para o último)? ");
 
             int.TryParse(Console.ReadLine(), out int num);
             bool numValido = num > 0 && num <= Exercicios.Count;
