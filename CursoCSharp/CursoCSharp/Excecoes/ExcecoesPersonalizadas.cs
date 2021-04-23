@@ -46,7 +46,7 @@ namespace CursoCSharp.Excecoes
             return valor;
         }
 
-        public void Executar()
+        public static void Executar()
         {
             try
             {

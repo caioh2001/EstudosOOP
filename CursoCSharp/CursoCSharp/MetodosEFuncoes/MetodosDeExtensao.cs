@@ -17,9 +17,9 @@ namespace CursoCSharp.MetodosEFuncoes
         }
     }
 
-    public class MetodosDeExtencao
+    public class MetodosDeExtensao
     {
-        public void Executar()
+        public static void Executar()
         {
             int numero = 5;
 

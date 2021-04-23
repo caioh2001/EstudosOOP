@@ -57,7 +57,7 @@ namespace CursoCSharp.OO
 
     class Interface
     {
-        public void Executar()
+        public static void Executar()
         {
             var calc = new Calculadora();
             var resultado = calc.ExecutarOperacoes(20,5);

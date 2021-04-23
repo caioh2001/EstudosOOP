@@ -8,7 +8,7 @@ namespace CursoCSharp.MetodosEFuncoes
 
     public class LambdasDelegate
     {
-        public void Executar()
+        public static void Executar()
         {
             Operacao sum = (x, y) => x + y;
             Operacao sub = (x, y) => x - y;

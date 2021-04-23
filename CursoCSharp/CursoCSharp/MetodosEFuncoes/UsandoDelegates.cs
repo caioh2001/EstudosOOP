@@ -19,7 +19,7 @@ namespace CursoCSharp.MetodosEFuncoes
             Console.WriteLine(a + b);
         }
 
-        public void Executar()
+        public static void Executar()
         {
             Soma op1 = MinhaSoma;
             Console.WriteLine(op1(2,3));

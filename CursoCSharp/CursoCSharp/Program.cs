@@ -1,9 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+
 using CursoCSharp.Fundamentos;
 using CursoCSharp.EstruturasDeControle;
 using CursoCSharp.ClassesEMetodos;
 using CursoCSharp.Colecoes;
+using CursoCSharp.OO;
+using CursoCSharp.MetodosEFuncoes;
+using CursoCSharp.Excecoes;
+using CursoCSharp.API;
 
 namespace CursoCSharp
 {
@@ -12,59 +17,87 @@ namespace CursoCSharp
         static void Main(string[] args)
         {
             var central = new CentralDeExercicios(new Dictionary<string, Action>() {
-                
                 // Fundamentos
                 {"Primeiro Programa - Fundamentos", PrimeiroPrograma.Executar},
-                {"Comentarios - Fundamentos", Comentarios.Executar},
-                {"Variaveis e constantes - Fundamentos", VariaveisEConstantes.Executar},
-                {"Inferencia - Fundamentos", Inferencia.Executar},
-                {"Interpolacao - Fundamentos", Interpolacao.Executar},
-                {"Notacao ponto - Fundamentos", NotacaoPonto.Executar},
-                {"Lendo dados - Fundamentos", LendoDados.Executar},
-                {"Formatando Numero - Fundamentos", FormatandoNumero.Executar},
-                {"Conversoes - Fundamentos", Conversoes.Executar},
+                {"Comentários - Fundamentos", Comentarios.Executar},
+                {"Váriaveis e Constantes - Fundamentos", VariaveisEConstantes.Executar},
+                {"Inferência - Fundamentos", Inferencia.Executar},
+                {"Interpolação - Fundamentos", Interpolacao.Executar},
+                {"Notação Ponto - Fundamentos", NotacaoPonto.Executar},
+                {"Lendo Dados - Fundamentos", LendoDados.Executar},
+                {"Formatando Número - Fundamentos", FormatandoNumero.Executar},
+                {"Conversões - Fundamentos", Conversoes.Executar},
                 {"Operadores Aritmeticos - Fundamentos", OperadoresAritmeticos.Executar},
                 {"Operadores Relacionais - Fundamentos", OperadoresRelacionais.Executar},
                 {"Operadores Logicos - Fundamentos", OperadoresLogicos.Executar},
-                {"Operadores de Atribuicao - Fundamentos", OperadoresAtribuicao.Executar},
-                {"Operadores Unarios - Fundamentos", OperadoresUnarios.Executar},
-                {"Operador Ternario - Fundamentos", OperadorTernario.Executar},
+                {"Operadores de Atribuição - Fundamentos", OperadoresAtribuicao.Executar},
+                {"Operadores Unários - Fundamentos", OperadoresUnarios.Executar},
+                {"Operador Ternário - Fundamentos", OperadorTernario.Executar},
                 
-                // Estruturas de controle
-                {"Estrutura If - Estruturas de controle", EstruturaIf.Executar},
-                {"Estrutura If/Else - Estruturas de controle", EstruturaIfElse.Executar},
-                {"Estrutura If/Else/If - Estruturas de controle", EstruturaIfElseIf.Executar},
-                {"Estrutura Switch - Estruturas de controle", EstruturaSwitch.Executar},
-                {"Estrutura While - Estruturas de controle", EstruturaWhile.Executar},
-                {"Estrutura Do While - Estruturas de controle", EstruturaDoWhile.Executar},
-                {"Estrutura For - Estruturas de controle", EstruturaFor.Executar},
-                {"Estrutura ForEach - Estruturas de controle", EstruturaForEach.Executar},
-                {"Usando Break - Estruturas de controle", UsandoBreak.Executar},
-                {"Usando Continue - Estruturas de controle", UsandoContinue.Executar},
-            
-                // Classes e Metodos
-                {"Membros - Classes e metodos", Membros.Executar},
-                {"Construtores - Classes e metodos", Construtores.Executar},
-                {"Metodos com retorno - Classes e metodos", MetodosComRetorno.Executar},
-                {"Metodos Estaticos - Classes e metodos", MetodosEstaticos.Executar},
-                {"Atributos Estaticos - Classes e metodos", AtributosEstaticos.Executar},
-                {"Desafio Atributos - Classes e metodos", DesafioAtributos.Executar},
-                {"Params - Classes e metodos", Params.Executar},
-                {"Parametros nomeados - Classes e metodos", ParametrosNomeados.Executar},
-                {"Get Set - Classes e metodos", GetSet.Executar},
-                {"Props - Classes e metodos", Props.Executar},
-                {"Readonly - Classes e metodos", Readonly.Executar},
-                {"Enum - Classes e metodos", ExemploEnum.Executar},
-                {"Struct - Classes e metodos", Struct.Executar},
-                {"Struct VS Classe - Classes e metodos", StructVsClasse.Executar},
-                {"Valor VS Referencia - Classes e metodos", ValorVsReferencia.Executar},
-                {"Parametros por referencia - Classes e metodos", ParametrosPorReferencia.Executar},
-                {"Parametro com valor padrao - Classes e metodos", ParametroPadrao.Executar},
-             
-                // Colecoes
-                {"Array - Colecoes", Colecoes.Array.Executar},
-                {"List - Colecoes", ColecoesList.Executar},
-                {"ArrayList - Colecoes", ColecoesArrayList.Executar},
+                // Estruturas de Controle
+                {"Estrutura If - Estruturas de Controle", EstruturaIf.Executar},
+                {"Estrutura If/Else - Estruturas de Controle", EstruturaIfElse.Executar},
+                {"Estrutura If/Else/If - Estruturas de Controle", EstruturaIfElseIf.Executar},
+                {"Estrutura Switch - Estruturas de Controle", EstruturaSwitch.Executar},
+                {"Estrutura While - Estruturas de Controle", EstruturaWhile.Executar},
+                {"Estrutura Do While - Estruturas de Controle", EstruturaDoWhile.Executar},
+                {"Estrutura For - Estruturas de Controle", EstruturaFor.Executar},
+                {"Estrutura Foreach - Estruturas de Controle", EstruturaForEach.Executar},
+                {"Usando Break - Estruturas de Controle", UsandoBreak.Executar},
+                {"Usando Continue - Estruturas de Controle", UsandoContinue.Executar},
+
+                // Classes e Métodos
+                { "Membros - Classes e Métodos", Membros.Executar},
+                { "Construtores - Classes e Métodos", Construtores.Executar},
+                { "Métodos Com Retorno - Classes e Métodos", MetodosComRetorno.Executar},
+                { "Métodos Estáticos - Classes e Métodos", MetodosEstaticos.Executar},
+                { "Atributos Estáticos - Classes e Métodos", AtributosEstaticos.Executar},
+                { "Desafio Atributo - Classes e Métodos", DesafioAtributos.Executar},
+                { "Params - Classes e Métodos", Params.Executar},
+                { "Parametros Nomeados - Classes e Métodos", ParametrosNomeados.Executar},
+                { "Get Set - Classes e Métodos", GetSet.Executar},
+                { "Props - Classes e Métodos", Props.Executar},
+                { "Readonly - Classes e Métodos", Readonly.Executar},
+                { "Enum - Classes e Métodos", ExemploEnum.Executar},
+                { "Struct - Classes e Métodos", Struct.Executar},
+                { "Struct Vs Classe - Classes e Métodos", StructVsClasse.Executar},
+                { "Valor Vs Referência - Classes e Métodos", ValorVsReferencia.Executar},
+                { "Parâmetros Por Referência - Classes e Métodos", ParametrosPorReferencia.Executar},
+                { "Parâmetro com Valor Padrão - Classes e Métodos", ParametroPadrao.Executar},
+
+                // Coleções
+                { "Array - Coleções", Colecoes.Array.Executar},
+                { "List - Coleções", ColecoesList.Executar},
+                { "Array List - Coleções", ColecoesArrayList.Executar},
+                { "Set - Coleções", ColecoesSet.Executar},
+                { "Queue - Coleções", ColecoesQueue.Executar},
+                { "Igualdade - Coleções", Igualdade.Executar},
+                { "Stack - Coleções", ColecoesStack.Executar},
+                { "Dictionary - Coleções", ColecoesDictionary.Executar},
+
+                // OO
+                { "Herança - OO", Heranca.Executar},
+                { "Construtor This - OO", ConstrutorThis.Executar},
+                { "Encapsulamento - OO", Encapsulamentos.Executar},
+                { "Polimorfismo - OO", Polimorfismo.Executar},
+                { "Abstract - OO", Abstract.Executar},
+                { "Interface - OO", Interface.Executar},
+                { "Sealed - OO", Sealed.Executar},
+
+                // Métodos & Funções
+                { "Exemplo Lambda - Métodos & Funções", ExemploLambda.Executar},
+                { "Lambdas Como Delegates - Métodos & Funções", LambdasDelegate.Executar},
+                { "Usando Delegates - Métodos & Funções", UsandoDelegates.Executar},
+                { "Delegates Como Função Anonima - Métodos & Funções", DelegateFunAnonima.Executar},
+                { "Delegates Como Parâmetros - Métodos & Funções", DelegatesComoParametros.Executar},
+                { "Métodos de Extensão - Métodos & Funções", MetodosDeExtensao.Executar},
+
+                // Exceções
+                { "Primeira Exceção - Exceções", PrimeiraExcecao.Executar},
+                { "Exceções Personalizadas - Exceções", ExcecoesPersonalizadas.Executar},
+
+                // Api
+                { "Primeiro Arquivo - Usando API", PrimeiroArquivo.Executar},
             });
 
             central.SelecionarEExecutar();

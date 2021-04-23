@@ -32,7 +32,7 @@ namespace CursoCSharp.OO
 
     class Abstract
     {
-        public void Executar()
+        public static void Executar()
         {
             var celulares = new List<Celular> {
                 new Iphone(),

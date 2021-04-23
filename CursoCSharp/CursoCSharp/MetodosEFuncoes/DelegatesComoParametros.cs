@@ -19,7 +19,7 @@ namespace CursoCSharp.MetodosEFuncoes
             return "Resultado: " + resultado;
         }
 
-        public void Executar()
+        public static void Executar()
         {
             Operacao subtracao = (int x, int y) => x - y;
             Console.WriteLine(Calculadora(subtracao, 3, 2));

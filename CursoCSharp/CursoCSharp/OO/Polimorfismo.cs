@@ -56,7 +56,7 @@ namespace CursoCSharp.OO
 
     class Polimorfismo
     {
-        public void Executar()
+        public static void Executar()
         {
             Feijao ingrediente1 = new Feijao(0.3);
             Arroz ingrediente2 = new Arroz(0.25);

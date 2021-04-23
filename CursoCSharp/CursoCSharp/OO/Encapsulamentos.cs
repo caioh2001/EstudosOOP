@@ -39,7 +39,7 @@ namespace CursoCSharp.OO
 
     class Encapsulamentos
     {
-        public void Executar()
+        public static void Executar()
         {
             SubCelebridade sub = new SubCelebridade();
             sub.MeusAcessos();

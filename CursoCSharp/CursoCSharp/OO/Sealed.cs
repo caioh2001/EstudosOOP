@@ -42,7 +42,7 @@ namespace CursoCSharp.OO
 
     class Sealed
     {
-        public void Executar()
+        public static void Executar()
         {
             SemFilho sem = new SemFilho();
             Console.WriteLine(sem.ValorDaFortuna());

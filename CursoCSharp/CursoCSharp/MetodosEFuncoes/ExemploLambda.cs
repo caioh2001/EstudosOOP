@@ -6,7 +6,7 @@ namespace CursoCSharp.MetodosEFuncoes
 {
     class ExemploLambda
     {
-        public void Executar()
+        public static void Executar()
         {
             Action algoNoConsole = () =>
             {

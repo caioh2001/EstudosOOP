@@ -26,7 +26,7 @@ namespace CursoCSharp.Excecoes
 
     public class PrimeiraExcecao
     {
-        public void Executar()
+        public static void Executar()
         {
             var conta = new Conta(1_452.45);
 
