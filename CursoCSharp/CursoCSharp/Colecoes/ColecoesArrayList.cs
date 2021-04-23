@@ -16,6 +16,7 @@ namespace CursoCSharp.Colecoes
             };
 
             arrayList.Add(3.14);
+            // arrayList.Count;
 
             foreach(var item in arrayList)
             {
