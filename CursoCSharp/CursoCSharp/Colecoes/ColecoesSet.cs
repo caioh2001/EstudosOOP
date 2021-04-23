@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace CursoCSharp.Colecoes
-{ 
+{
     class ColecoesSet
     {
         public static void Executar()
@@ -17,6 +17,7 @@ namespace CursoCSharp.Colecoes
             {
                 new Produto("Camisa", 29.9),
                 new Produto("8º Temporada Game of Thrones", 99.9),
+                new Produto("Poster", 10),
                 new Produto("Poster", 10)
             };
 
@@ -24,7 +25,7 @@ namespace CursoCSharp.Colecoes
             Console.WriteLine(carrinho.Count);
             // carrinho.RemoveAt(3);
 
-            foreach(var item in carrinho)
+            foreach (var item in carrinho)
             {
                 // Console.Write(carrinho.IndexOf(item));
                 Console.WriteLine($" {item.Nome} {item.Preco}");
